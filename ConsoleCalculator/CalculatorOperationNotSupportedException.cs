@@ -2,7 +2,7 @@
 
 namespace ConsoleCalculator
 {
-    class CalculatorOperationNotSupportedException : CalculatorException
+    public class CalculatorOperationNotSupportedException : CalculatorException
     {
         public string Operation { get; }
 

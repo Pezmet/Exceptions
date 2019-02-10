@@ -22,19 +22,18 @@ namespace ConsoleCalculator
                 {
                     return Divide(number1, number2);
                 }
-                catch (DivideByZeroException ex)
+                catch (ArithmeticException ex)
                 {
                     //Log(ex)
                     //throw; to get the full call stack
-                    throw new ArithmeticException("Math error.", ex); //wraping exception
+                    throw new CalculatorException("Error occured during division", ex);
                 }
             }
             else
             {
                 //Console.WriteLine("Unknown operation.");
                 //return 0;
-                throw new ArgumentOutOfRangeException(nameof(operation),
-                    "Operation not suppoerted yet!");
+                throw new CalculatorOperationNotSupportedException(operation);
             }
         }
         

@@ -1,7 +1,7 @@
 # Exceptions
 .net Exceptions and testing exception throwing in:
 
-Nunit
+NUnit
 
 XUnit
 
